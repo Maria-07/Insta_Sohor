@@ -12,7 +12,7 @@ const getReportedPosts = () => {
 };
 
 const isLiked = (id) => {
-    return likedPostsId?.length && !!likedPostsId.includes(id);
+    return likedPostsId ?.length && !!likedPostsId.includes(id);
 };
 
 // Post like part 
@@ -150,19 +150,25 @@ const showPosts = (posts) => {
 
 // Liked post part 
 const displayLikedPosts = () => {
-    const likedPosts = getLikedPosts();
-    likedPosts.forEach((post) => {
-        const div = createPost(post);
-        document.getElementById( "liked" ).appendChild(div);
-    });
+  const likedPosts = getLikedPosts();
+  console.log(likedPosts);
+  const liked = document.getElementById("liked");
+  liked.innerHTML='';
+  likedPosts.forEach((post) => {
+    const div = createPost(post);
+    liked.appendChild(div);
+  });
+
 };
 
 // reported post part 
 const displayReportedPosts = () => {
     const reportedPosts = getReportedPosts();
+    const report = document.getElementById("reported");
+    report.innerHTML='';
     reportedPosts.forEach((post) => {
         const div = createPost(post);
-        document.getElementById( "reported" ).appendChild(div);
+        report.appendChild(div);
     });
 };
 
