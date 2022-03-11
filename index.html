@@ -64,19 +64,20 @@
 
     <section class="container my-5 w-75 shadow">
 
-        <h1 class="text-center p-5">SOME Q/A</h1>
+        <h1 class="text-center p-5">Some Questions & Answers</h1>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <h4>#1 How does JavaScript actually works ?</h4>
+                        <h4>#1 How does JavaScript actually works?</h4>
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><b> JavaScript </b>is an interpreter language that checks the entire code line
+                    <div class="accordion-body"><b> JavaScript </b>is an interpreter language that checks the entire
+                        code line
                         by line. JavaScript always has to run in the browser, when we try to run a JavaScript file in
                         the browser it's run by the browser's own JS engine. There are different JS engines for
                         different browsers such as the V8 engine for Chrome, SpiderMonkey for Firefox, Chakra for
@@ -85,7 +86,8 @@
                         <br>
                         Firstly the javascript file parses the code inside the parser which is inside the engine, which
                         checks the entire code line by line. which Inform if there is any problem with the code. The
-                        parser then produces the AST<b> (Abstract Syntax Tree) </b>which converts the code into machine code.
+                        parser then produces the AST<b> (Abstract Syntax Tree) </b>which converts the code into machine
+                        code.
                         Then the actual JS code runs and shows the output on the screen.</div>
                 </div>
             </div>
@@ -93,7 +95,7 @@
                 <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        <h4>#1 What does Java Event Loop works ?</h4>
+                        <h4>#2 What does Java Event Loop do?</h4>
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
@@ -103,14 +105,16 @@
                         <br>
                         <br>
                         allocation and the call stack part is used for stack all those functions which are called during
-                        code run time. Stack always works as a <b> LIFO(last in first out) </b>so when multiple functions call
+                        code run time. Stack always works as a <b> LIFO(last in first out) </b>so when multiple
+                        functions call
                         it's synchronously executed. but when there happened any setTime Function, there occurs an event
                         loop. the call stack sent the set time function to the Web API to execute and at the same time,
                         it executed other functions synchronously. when the web API completes the execution it sent the
                         function to the callback queue.
                         <br>
                         <br>
-                        where Queue is <b>FIFO(First in First Out)</b> . So when the call stack finished execution of all
+                        where Queue is <b>FIFO(First in First Out)</b> . So when the call stack finished execution of
+                        all
                         functions here the event loop occurs. the event loop connects the callback queue with the call
                         stack. JavaScript does multiple works via Event Loop on the asynchrony way.</div>
                 </div>
@@ -119,7 +123,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        <h4>#3 What is Local and Session Storage ?</h4>
+                        <h4>#3 Difference between Local and Session Storage?</h4>
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
@@ -129,8 +133,8 @@
                         <br>
                         <br>
                         the main differences between session and local storage are the value which we set in local
-                        storage stored until the user clears or resets it. At the same time, the values set in the
-                        session storage reset or deleted during all the reload or refresh times.
+                        storage stored until it is Cleared or Deleted. At the same time, the values set in the
+                        session storage reset or delete during all the reload or refresh times.
                         <br>
                         <br>
                         there are also some data limitations among them. it says the 5MB limit for local storage was
